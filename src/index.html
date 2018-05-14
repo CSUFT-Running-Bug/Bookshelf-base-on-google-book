@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Book Search</title>
-  <link href="https://cdn.bootcss.com/materialize/1.0.0-beta/css/materialize.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/>
+
 </head>
 <body>
-  <div class="container">
-      <div class="box z-depth-4" style="margin:30px auto">
-          <div class="red-text" style="display:inline-block;position: relative;top:12px;font-size:17px">Search books</div>
-          <input style="width:180px;display:inline-block;" class="inputCard" id="books">
-        
-        <a class="waves-effect waves-light btn btn-search" style="display:block;width:100px;margin:30px auto">go</a>
-      </div>
-  </div>
-  <div id="result" >
+<div id="myId">
+    <div id="header" class="section">
+        <div id="header-text">
+            Welcome to bookshelf
+        </div>
+        <div id="header-form">
+            <div id="formWapper">
+                <input type="text" required="required" placeholder="Search ..." class="search" id="books">
+                <input type="button" class="btn-search" value="Go" id="btn">
+            </div>
+        </div>
+    </div>
 
-  </div>
-  <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
-  <script src="https://cdn.bootcss.com/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="index.js"></script>
+    <div id="result" class="section">
+
+    </div>
+</div>
+<!--
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>&lt;!&ndash;回调函数&ndash;&gt;
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+-->
+
+<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="index.js"></script>
+<!--<script src="fullPage.js"></script>-->
 </body>
 </html>
